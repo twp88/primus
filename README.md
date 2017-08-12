@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/twp88/primus.svg?branch=master)](https://travis-ci.org/twp88/primus)
+[![Build Status](https://travis-ci.org/twp88/primus.svg?branch=master)](https://travis-ci.org/twp88/primus) [![Coverage Status](https://coveralls.io/repos/github/twp88/primus/badge.svg?branch=master)](https://coveralls.io/github/twp88/primus?branch=master)
 
-[![Coverage Status](https://coveralls.io/repos/github/twp88/primus/badge.svg?branch=master)](https://coveralls.io/github/twp88/primus?branch=master)
+
 
 # Primus
 
