@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/twp88/primus.svg?branch=master)](https://travis-ci.org/twp88/primus)
 
+[![Coverage Status](https://coveralls.io/repos/github/twp88/primus/badge.svg?branch=master)](https://coveralls.io/github/twp88/primus?branch=master)
+
 # Primus
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/primus`. To experiment with that code, run `bin/console` for an interactive prompt.
