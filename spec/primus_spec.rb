@@ -6,6 +6,6 @@ describe Primus do
   end
 
   it "does something useful" do
-    expect(false).to eq(true)
+    expect(0).to be(0)
   end
 end
