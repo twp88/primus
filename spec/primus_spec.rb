@@ -1,11 +1,24 @@
 require "spec_helper"
 
 describe Primus do
-  it "has a version number" do
-    expect(Primus::VERSION).not_to be nil
+  let(:subject) { Class.new { extend Primus } }
+  
+  let(:hash) do
+    {
+      "a" => "This",
+      "b" => "is",
+      "c" => "a",
+      "d" => "longish",
+      "e" => "hash",
+      "f" => "for",
+      "g" => "testing",
+      "h" => "purposes",
+      "i" => "!",
+    }
   end
 
-  it "does something useful" do
-    expect(0).to be(0)
+  context "when passing primus a long hash"
+  it "retuns a capitlized string" do
+    expect(subject.reorder(hash)).to eq "HFDB"
   end
 end
