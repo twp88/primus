@@ -9,8 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tom Page"]
   spec.email         = ["tom.cat117755@gmail.com"]
 
-  spec.summary       = %q{A very small quick gem to test how to make a gem.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A very small quick gem to test how to make a gem. Have you ever needed to take every other key from a hash, revert their order and turn them into a capitalized string? Yes? Then this is the gem for you.}
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
