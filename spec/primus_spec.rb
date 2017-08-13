@@ -2,6 +2,8 @@ require "spec_helper"
 
 describe Primus do
   let(:subject) { Primus::Reorder.new }
+
+  let(:empty_hash) { {} }
   let(:short_hash) { { "a" => "Indeed", "b" => "a", "c" => "short_hash" } }
 
   let(:long_hash) do
@@ -27,6 +29,12 @@ describe Primus do
   context "when passing primus a short hash" do
     it "returns one capitlized letter" do
       expect(subject.call(short_hash)).to eq "B"
+    end
+  end
+
+  context "when passing primus a short hash" do
+    it "returns one capitlized letter" do
+      expect(subject.call(empty_hash)).to eq "This hash is empty"
     end
   end
 end
