@@ -25,6 +25,8 @@ describe Primus do
   end
 
   context "when passing primus a short hash" do
-    expect(subject.call(short_hash)).to eq "B"
+    it "returns one capitlized letter" do
+      expect(subject.call(short_hash)).to eq "B"
+    end
   end
 end
