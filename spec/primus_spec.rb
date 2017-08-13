@@ -1,8 +1,8 @@
 require "spec_helper"
 
 describe Primus do
-  let(:subject) { Class.new { extend Primus } }
-  
+  let(:subject) { Primus::Reorder.new }
+
   let(:hash) do
     {
       "a" => "This",
@@ -17,8 +17,9 @@ describe Primus do
     }
   end
 
-  context "when passing primus a long hash"
-  it "retuns a capitlized string" do
-    expect(subject.reorder(hash)).to eq "HFDB"
+  context "when passing primus a long hash" do
+    it "retuns a capitlized string" do
+      expect(subject.reorder(hash)).to eq "HFDB"
+    end
   end
 end
