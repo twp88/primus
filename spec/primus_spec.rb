@@ -19,7 +19,7 @@ describe Primus do
 
   context "when passing primus a long hash" do
     it "retuns a capitlized string" do
-      expect(subject.reorder(hash)).to eq "HFDB"
+      expect(subject.call(hash)).to eq "HFDB"
     end
   end
 end

@@ -2,7 +2,7 @@ require "primus/version"
 
 module Primus
   class Reorder
-    def reorder(hash)
+    def call(hash)
       take_odd_keys(hash)
       sort_array
       convert_to_upcase_string
