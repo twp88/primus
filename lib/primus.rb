@@ -1,4 +1,4 @@
-# require "primus/version"
+require "primus/version"
 
 module Primus
   class Reorder
