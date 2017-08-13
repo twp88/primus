@@ -1,15 +1,22 @@
-require "primus/version"
+# require "primus/version"
 
 module Primus
   class Reorder
     def call(hash)
-      take_odd_keys(hash)
+      is_hash_empty?(hash)
       sort_array
       convert_to_upcase_string
-      string
     end
 
   private
+
+    def is_hash_empty?(hash)
+      if hash.empty?
+        raise RuntimeError.new("This hash is empty")
+      else
+        take_odd_keys(hash)
+      end
+    end
 
     def take_odd_keys(hash)
       hash.each_with_index { |(key,value), index| array << key if index.odd? }
@@ -21,6 +28,7 @@ module Primus
 
     def convert_to_upcase_string
       array.each { |c| string << c.upcase }
+      string
     end
 
     def array

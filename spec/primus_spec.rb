@@ -34,7 +34,7 @@ describe Primus do
 
   context "when passing primus a short hash" do
     it "returns one capitlized letter" do
-      expect(subject.call(empty_hash)).to eq "This hash is empty"
+      expect { subject.call(empty_hash) }.to raise_error(RuntimeError, "This hash is empty")
     end
   end
 end
