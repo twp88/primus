@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'primus/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "primus"
+  spec.name          = "primus_lapus"
   spec.version       = Primus::VERSION
   spec.authors       = ["Tom Page"]
   spec.email         = ["tom.cat117755@gmail.com"]
