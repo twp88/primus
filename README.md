@@ -2,11 +2,11 @@
 
 
 
-# Primus
+# Primus Lapus
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/primus`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Primus Lapus! As the name in latin suggests, this is the first ruby gem that I've
+written. It takes a hash as an argument, takes every other key, capitilizes them, reverses their
+order, before turning it into a string. It that's what you need, then this is your gem!
 
 ## Installation
 
@@ -26,7 +26,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To run the gem type, ```ruby Primus::Reorder.new.call(hash)```, passing it the hash that you have created.
 
 ## Development
 
@@ -36,7 +36,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/primus. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/twp88/primus. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

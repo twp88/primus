@@ -11,11 +11,8 @@ module Primus
   private
 
     def is_hash_empty?(hash)
-      if hash.empty?
-        raise RuntimeError.new("This hash is empty")
-      else
-        take_odd_keys(hash)
-      end
+     raise RuntimeError.new("This hash is empty") if hash.empty?
+     take_odd_keys(hash)
     end
 
     def take_odd_keys(hash)
