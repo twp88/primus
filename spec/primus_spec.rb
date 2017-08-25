@@ -19,7 +19,7 @@ describe Primus do
       }
     end
 
-    it 'returns a capitlized string' do
+    it 'returns a reverse ordered capitlized string' do
       expect(call(long_hash)).to eq 'HFDB'
     end
   end
