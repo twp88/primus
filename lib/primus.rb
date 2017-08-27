@@ -3,8 +3,8 @@
 require 'primus/version'
 
 # Takes a hash and returns string of reverse order odd keys
-module Primus
-  def call(hash)
+class Primus
+  def self.call(hash)
     raise 'This hash is empty' if hash.empty?
     array = hash.each_with_index.map { |(key), index| key.upcase if index.odd? }.compact
     array.sort.reverse.join('')
