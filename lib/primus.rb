@@ -3,7 +3,7 @@
 require 'primus/version'
 
 # Takes a hash and returns string of reverse order odd keys
-class Primus
+class Hashify
   def self.call(hash)
     raise 'This hash is empty' if hash.empty?
     array = hash.each_with_index.map { |(key), index| key.upcase if index.odd? }.compact

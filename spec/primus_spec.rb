@@ -1,6 +1,8 @@
 require 'spec_helper'
 
-describe Primus do
+describe Hashify do
+  subject { Hashify }
+
   context 'when passing primus a long hash' do
     let(:long_hash) do
       {
@@ -17,7 +19,7 @@ describe Primus do
     end
 
     it 'returns a reverse ordered capitlized string' do
-      expect(Primus.call(long_hash)).to eq 'HFDB'
+      expect(subject.call(long_hash)).to eq 'HFDB'
     end
   end
 
@@ -25,7 +27,7 @@ describe Primus do
     let(:short_hash) { { 'a' => 'Indeed', 'b' => 'a', 'c' => 'short_hash' } }
 
     it 'returns one capitlized letter' do
-      expect(Primus.call(short_hash)).to eq 'B'
+      expect(subject.call(short_hash)).to eq 'B'
     end
   end
 
@@ -33,7 +35,7 @@ describe Primus do
     let(:empty_hash) { {} }
 
     it 'returns an error message' do
-      expect { Primus.call(empty_hash) }
+      expect { subject.call(empty_hash) }
         .to raise_error(RuntimeError, 'This hash is empty')
     end
   end
